@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85vw;
+  left: 15vw;
+  position: absolute;
+  top: 7vh;
+  height: 93vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background: var(--unnamed-color-f5f5f5) 0% 0% no-repeat padding-box;
+background: #F5F5F5 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+:root {
+
+  /* Colors: */
+  --unnamed-color-ffffff: #FFFFFF;
+  --cbs-s-blå-tone: #BABADD;
+  --cbs-s-blå-skygge: #32305D;
+  --unnamed-color-eeeeee: #EEEEEE;
+  --unnamed-color-707070: #707070;
+  --cbs-s-blå: #5050A5;
+  --unnamed-color-333333: #333333;
+  --orange-tone: #F9AE7A;
+  --unnamed-color-aaaaaa: #AAAAAA;
+  --grøn-tone: #88E288;
+  --gul-skygge: #FFBA00;
+  --orange: #FF9400;
+  --orange-skygge: #FF7100;
+  --unnamed-color-f5f5f5: #F5F5F5;
+  --blågrøn-skygge: #07936B;
+  --rød-skygge: #B10024;
+  --grøn-skygge: #276B27;
+  --gul-tone: #FFE8B0;
+  --grøn: #46AF46;
+  --rød: #FA2846;
+  --lilla: #C238C6;
+  --lilla-skygge: #700F6E;
+  --lilla-tone: #DDA6DD;
+  --blå: #4263DB;
+  --blå-skygge: #0E358C;
+  --blå-tone: #83B9EA;
+  --blågrøn: #37D192;
+  --blågrøn-tone: #8BE8CF;
+  --gul: #FFDD4D;
+  --rød-tone: #FF8DA6;
+  
+  /* Font/text values */
+  --unnamed-font-family-open-sans: Open Sans;
+  --unnamed-font-family-teko: Teko;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-300: 300px;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-26: 26px;
+  --unnamed-font-size-40: 40px;
+  --unnamed-font-size-11-800000190734863: 11.800000190734863px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-16: 16px;
+  --unnamed-line-spacing-22: 22px;
+  --unnamed-line-spacing-27: 27px;
+  --unnamed-line-spacing-36: 36px;
+  --unnamed-line-spacing-57: 57px;
+  --unnamed-text-transform-titlecase: titlecase;
+  }
+  
+  /* Character Styles */
+  .unnamed-character-style-1 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-22);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-333333);
+  }
+  .unnamed-character-style-2 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-22);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--cbs-s-blå-skygge);
+  }
+  .unnamed-character-style-3 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-11-800000190734863);
+  line-height: var(--unnamed-line-spacing-16);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-333333);
+  }
+  .unnamed-character-style-4 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-27);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  }
+  .unnamed-character-style-5 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-26);
+  line-height: var(--unnamed-line-spacing-36);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--cbs-s-blå-skygge);
+  }
+  .unnamed-character-style-6 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-26);
+  line-height: var(--unnamed-line-spacing-36);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-transform: var(--unnamed-text-transform-titlecase);
+  }
+  .unnamed-character-style-7 {
+  font-family: var(--unnamed-font-family-open-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-26);
+  line-height: var(--unnamed-line-spacing-36);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--cbs-s-blå-skygge);
+  }
+  .unnamed-character-style-8 {
+  font-family: var(--unnamed-font-family-teko);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-40);
+  line-height: var(--unnamed-line-spacing-57);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  }
+  .unnamed-character-style-9 {
+  font-family: var(--unnamed-font-family-teko);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-40);
+  line-height: var(--unnamed-line-spacing-57);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--blå-skygge);
+  }

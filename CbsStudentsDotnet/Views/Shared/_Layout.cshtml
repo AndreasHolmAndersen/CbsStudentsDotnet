@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CbsStudentsDotnet</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CbsStudentsDotnet.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/header.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/posts.css" asp-append-version="true">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a class="logo-anchor" asp-area="" asp-controller="Home" asp-action="Index"><img src="../images/logo.svg"
+                        alt="brand logo"></a>
+            </div>
+
+            <div class="header-right">
+                <p class="header-catchline">CBS Outdoor & Adventure</p>
+                <button class="header-profile"><img src="../images/icons/person.svg" alt="person icon"></button>
+            </div>
+
+        </div>
+    </header>
+    <a class="logo-anchor" asp-area="" asp-controller="Home" asp-action="Index"></a>
+   <div class="nav-bar">
+        <nav id="side-nav">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a class="nav-anchor" asp-area="" asp-controller="Post" asp-action="Index">
+                        <img class="nav-icon" src="../images/icons/post.svg" alt="posts icon"> Posts
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/navbar.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

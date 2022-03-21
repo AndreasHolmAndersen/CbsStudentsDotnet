@@ -1,0 +1,74 @@
+@model IEnumerable<cbsStudents.Models.Entities.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="posts-container">
+    <div class="post-top-left">
+        <h1 class="posts-heading">Posts</h1>
+    </div>
+    <div class="post-top-right">
+        <button class="new-post-btn">
+            <a class="new-post-anchor" asp-action="Create">Create New <img class="new-post-icon"
+                    src="../images/icons/plus.svg" alt=""> </a>
+        </button>
+    </div>
+    <div class="posts-table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="post-title">
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th class="post-created">
+                        @Html.DisplayNameFor(model => model.Created)
+                    </th>
+                    <th class="post-media">
+                        @Html.DisplayNameFor(model => model.Media)
+                    </th>
+
+                    <th class="post-activity">
+                        Activity
+                    </th>
+                    <th class="post-status">
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="post-title">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+
+                        <td class="post-created">
+                            @Html.DisplayFor(modelItem => item.Created)
+                        </td>
+                        <td class="post-media">
+                            @Html.DisplayFor(modelItem => item.Media)
+                        </td>
+                        <td class="post-acitivity">
+                            @Html.DisplayFor(modelItem => item.AmountOfLikes)
+                            @Html.DisplayFor(modelItem => item.AmountOfComments)
+                        </td>
+                        <td class="post-status">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            <button class="post-edit-btn">
+                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            </button>
+                            @* <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
+                            @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> *@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
