@@ -1,0 +1,1 @@
+dotnet aspnet-codegenerator controller -name CommentsController -m Comment -dc CbsStudentContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite

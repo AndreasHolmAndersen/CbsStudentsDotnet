@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using cbsStudents.Models.Entities;
+using cbsStudents.Data;
 
 namespace CbsStudentsDotnet.Controllers
 {

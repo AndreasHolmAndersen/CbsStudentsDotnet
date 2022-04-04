@@ -1,5 +1,5 @@
 @model cbsStudents.Models.Entities.Post
-
+@using cbsStudents.Models.Entities
 @{
     ViewData["Title"] = "Edit";
 }
@@ -30,7 +30,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <select asp-for="Status" class="form-control"></select>
+                <select asp-for="Status" class="form-control status-select">
+                    <option value="@PostStatus.DRAFT">Draft</option>
+                    <option value="@PostStatus.PUBLISHED">Published</option>
+                </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
             <div class="form-group">

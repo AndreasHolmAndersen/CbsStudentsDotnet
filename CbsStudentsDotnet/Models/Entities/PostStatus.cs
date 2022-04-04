@@ -1,4 +1,4 @@
-namespace cbsStudents.Models;
+namespace cbsStudents.Models.Entities;
 
 public enum PostStatus {
     DRAFT, PUBLISHED

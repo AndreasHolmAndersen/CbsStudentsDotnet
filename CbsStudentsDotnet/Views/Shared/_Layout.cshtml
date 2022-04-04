@@ -20,8 +20,10 @@
                 <a class="logo-anchor" asp-area="" asp-controller="Home" asp-action="Index"><img src="../images/logo.svg"
                         alt="brand logo"></a>
             </div>
+             <partial name="_LoginPartial"/>
 
             <div class="header-right">
+               
                 <p class="header-catchline">CBS Outdoor & Adventure</p>
                 <button class="header-profile"><img src="../images/icons/person.svg" alt="person icon"></button>
             </div>
@@ -37,6 +39,17 @@
                         <img class="nav-icon" src="../images/icons/post.svg" alt="posts icon"> Posts
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-anchor" asp-area="" asp-controller="Comments" asp-action="Index">
+                        <img class="nav-icon" src="../images/icons/post.svg" alt="posts icon"> Comments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-anchor" asp-area="" asp-controller="Identity" asp-action="Index">
+                        <img class="nav-icon" src="../images/icons/post.svg" alt="posts icon"> Login
+                    </a>
+                </li>
+                
                 
             </ul>
         </nav>

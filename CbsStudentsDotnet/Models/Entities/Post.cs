@@ -24,4 +24,6 @@ public class Post {
     public int? AmountOfLikes {get; set;}
     public int? AmountOfComments {get; set;}
 
+    public List<Comment> Comments { get; set; }
+
 }
